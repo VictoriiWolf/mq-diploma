@@ -1,0 +1,734 @@
+/* ======================= COMMON */
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(diploma/fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(diploma/fonts/OpenSans-Bold.ttf);
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ======================== HEADER */
+
+@media (min-width: 1201px) {
+.header {
+  background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/images/banner-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.header-wrapper {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.logo {
+  width: 180px;
+  margin-left: 130px;
+}
+
+.header__navigation {
+  display: flex;
+}
+
+.menu__item {
+  margin-left: 35px;
+}
+
+.a_menu__item {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.a_menu__item:hover {
+  text-decoration: underline;
+}
+
+.header__title {
+  font-size: 45px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: auto;
+  max-width: 800px;
+  padding: 120px 0;
+  margin-right: 0 auto;
+  margin-top: 0 auto;
+}
+
+/* ======================== NOW IN TREND */
+
+  .section__tittle {
+   text-transform: uppercase;
+   margin: 0 auto;
+   text-align: center;
+   position: relative;
+   margin-top: 65px;;
+  }
+  .section__tittle:after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: #e1d9bd;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+  .now_in_trend {
+    display: flex;
+    width: 100%;
+}
+
+  .trend__post1 {
+    display: flex;
+    padding: 30px;
+    width: 25%;
+    margin: 1px;
+    height: 200px;
+    position: relative;
+    background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/images/trend1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.trend__post1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.trend__post2 {
+    display: flex;
+    padding: 30px;
+    width: 25%;
+    margin: 1px;
+    height: 200px;
+    position: relative;
+    background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/images/trend2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.trend__post2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.trend__post3 {
+    display: flex;
+    padding: 30px;
+    width: 25%;
+    margin: 1px;
+    height: 200px;
+    position: relative;
+    background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/images/trend3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.trend__post3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.trend__post4 {
+    display: flex;
+    padding: 30px;
+    width: 25%;
+    margin: 1px;
+    height: 200px;
+    position: relative;
+    background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/images/trend4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.trend__post4:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.trandpost__content {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  z-index: 2;
+  justify-content: right;
+  align-items: flex-start;
+  border: 1px solid #b59f5b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.tags__list {
+  display: flex;
+  margin-bottom: -15px;
+  z-index: 2;
+}
+
+.tag {
+  color: #b59f5b;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.tag:hover {
+  text-decoration: underline;
+}
+
+ .trend__name {
+   color: white;
+   text-transform: uppercase;
+   z-index: 2;
+  }
+  .trend__name:hover {
+    text-decoration: underline;
+  }
+
+/* ======================== MAIN */
+
+.main__and__sidebar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+  .main {
+  margin-top: 65px;
+}
+
+.main__wrapper {
+  min-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+ 
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__content {
+  width: 65%;
+}
+
+.tags__list {
+  display: flex;
+  margin-bottom: -15px;
+}
+
+.tag {
+  color: #b59f5b;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.tag:hover {
+  text-decoration: underline;
+}
+
+.post__name {
+  color: black;
+  text-transform: uppercase;
+}
+
+.post__name:hover {
+  color: #b59f5b;
+}
+
+.time__and__autor {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-top: -10px;
+}
+
+.time {
+  font-size: 12px;
+  color: #888888;
+  padding-top: 0;
+  margin-right: 10px;
+}
+
+.unknown__autor {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.article {
+  display: flex;
+  align-items: flex-start;
+}
+
+.article:not(:first-child) {
+  margin-top: 60px;
+}
+
+.article__picture {
+  margin-right: 30px;
+}
+
+/* ======================= ASIDE */
+
+.sidebar {
+  width: 270px;
+  margin-top: -20px;
+}
+
+.sidebar__header {
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.sidebar__header::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 65px;
+  height: 3px;
+  background-color: #e1d9bd;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ======================= NEW POSTS */
+
+.new__posts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -30px;
+}
+
+.new__post__block {
+  box-sizing: border-box;
+  width: 270px;
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+.icon {
+  float: left;
+  margin-right: 20px;
+}
+
+.new__posts__link {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.new__posts__link:hover {
+  color: #b59f5b;
+}
+
+/* ======================= SEARCH */
+
+.search__block {
+  margin-bottom: 60px;
+}
+
+.text__fiddle__search {
+  position: relative;
+  width: 270px;
+  margin-top: 50px;
+}
+
+.search {
+  width: 100%;
+  height: 50px;
+  padding-left: 18px;
+  border: 0px solid #f3f7f5;
+  outline: none;
+  background: #f3f7f5;
+}
+
+.search:focus {
+  outline-color: #b59f5b;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+.botton__search {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/svg/search.svg');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center center;
+  background-color: #b59f5b;
+  cursor: pointer;
+}
+
+.botton__search:hover {
+  background-color: black;
+}
+
+/* ======================= EMAIL */
+
+.email__block {
+  margin-bottom: 40px;
+}
+
+.text__fiddle__email {
+  position: relative;
+  width: 270px;
+}
+
+placeholder {
+  font-size: 13px;
+}
+
+.email {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 50px;
+  padding-left: 18px;
+  border: 0px solid #f3f7f5;
+  outline: none;
+  background: #f3f7f5;
+}
+
+.email:focus {
+  outline-color: #b59f5b;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+.botton__subscribe {
+  width: 270px;
+  height: 50px;
+  border: 0px solid #b59f5b;
+  outline: none;
+  background: #b59f5b;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.botton__subscribe:hover {
+  background-color: black;
+}
+
+/* ======================= TAGS*/
+
+.tags__block {
+  margin-bottom: 30px;
+}
+
+.sidebar__tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar__tags__link {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 7px;
+  box-sizing: content-box;
+  border: 3px solid #ededed;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: bold;
+  padding: 4px 11px;
+}
+
+.sidebar__tags__link:hover {
+  border: 3px solid #b59f5b;
+}
+
+/* ======================= THEMES*/
+
+.themes__list {
+  padding: 0;
+  margin: 0;
+}
+
+.thems__items {
+  position: relative;
+  box-sizing: border-box;
+  height: 50px;
+  width: 270px;
+}
+
+.theme {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.theme:hover {
+  color: #b59f5b;
+}
+
+.index {
+  font-size: 12px;
+  vertical-align: super;
+  color: #b59f5b;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.index::after {
+  content: "";
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 270px;
+  height: 1px;
+  background-color: #ededed;
+}
+
+/* ======================= SHOP*/
+
+.products {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+.products__content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+.product__image {
+  margin: 0 auto;
+}
+
+.name__and__decription {
+  border: 2px solid #b59f5b;
+  padding: 30px 20px 20px 20px;
+  margin-top: -30px;
+
+}
+
+.shop__link {
+  color: #b59f5b;
+}
+
+.shop__link:hover {
+  text-decoration: underline;
+}
+
+.old__price {
+  text-decoration: line-through;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.botton__shop {
+  float: right;
+  width: 150px;
+  height: 50px;
+  border: 0px solid #b59f5b;
+  outline: none;
+  background: #b59f5b;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.botton__shop:hover {
+  background-color: black;
+}
+
+/* ===================== FOOTER */
+.footer {
+  margin: 0 auto; 
+  width: 93%;
+}
+
+.footer__wrapper {
+  margin: auto;
+  padding: 0 15px;
+}
+
+.footer__address {
+  background-color: #f3f7f5;
+  padding: 30px 0;
+}
+
+.socailnet__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socailnet__list__item:not(:first-child) {
+  margin-left: 25px;
+}
+
+.socailnet__list__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.social__icon__dribbble {
+  background-image: url(file:///Users/victoriawolf/Desktop/diploma.html/svg/001-dribbble.svg);
+}
+
+.social__icon__pinterest {
+  background-image: url(file:///Users/victoriawolf/Desktop/diploma.html/svg/001-pinterest.svg);
+}
+
+.social__icon__tumblr {
+  background-image: url(file:///Users/victoriawolf/Desktop/diploma.html/svg/003-tumblr.svg);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.copyright {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.copyright__link {
+  font-size: 12px;
+  color: #999999;
+  font-weight: 700;
+}
+}
+
+
+@media (min-width: 768px and max-width: 1200px) {
+  .header {
+  background-image: url('images/banner-tablet.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding: 30px 0;
+  width: 100%;
+}
+}
