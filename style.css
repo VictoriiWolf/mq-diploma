@@ -34,7 +34,7 @@ a {
 
 @media (min-width: 1201px) {
 .header {
-  background-image: url('diploma/images/banner-bg.jpg');
+  background-image: url('images/banner-bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
