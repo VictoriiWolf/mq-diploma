@@ -7,6 +7,49 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+
+
+<!-- POP UP
+
+<div class="popup__container">
+ <div class="popup">
+	<h3 class="section__tittle">ваш фидбек</h3>
+
+  <div class="popup__content">
+  <p>Как часто вы заходите на сайт?</p>
+  <select class="popup__options">
+    <optgroup label="Как часто вы заходите на сайт?" class="choice__field">
+      <option>Почти каждый день</option>
+      <option>Раз в неделю</option>
+      <option>Раз в месяц</option>
+      <option>Реже раза в месяц</option>
+    </optgroup>
+  </select>  
+  </div>
+
+   <div class="popup__content">
+  <p>Вы подписаны на e-mail рассылку?</p>
+     <input type="radio" class="radio__button">
+     <label>
+     Да
+    </label>
+     <input type="radio" class="radio__button" class="no">
+     <label>
+     Нет
+    </label>
+</div>
+
+     <div class="popup__content">
+     	<p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+     	<textarea placeholder="Может, больше рецептов?" class="popup__text"></textarea>	
+     </div>
+     	
+   <div class="popup__content">
+     	<button type="submit" class="botton__send">Отправить</button>
+     </div>
+     </div>
+ </div>
+</div> /!-->
 	
 <!-- HEADER /!-->
 
@@ -15,7 +58,10 @@
     <nav class="menu__top">
       <a href="#0" class="logo__link">
         <img src="svg/noemi-logo.svg" alt="Логотип" class="logo">
-    </a>
+     </a> 
+        <a href="#0">
+        <img src="svg/burger-menu.svg" alt="бургерное меню" class="burger__menu">
+        </a>
       <ul class="header__navigation">
         <li class="menu__item">
           <a href="#0" class="a_menu__item">Главная</a>
@@ -43,11 +89,11 @@
 
 <!-- NOW IN TREND /!-->
 
-<div>
+<div class="trend__block">
 	<h3 class="section__tittle">сейчас в тренде</h3>
 <div class="now_in_trend">
 	<div class="now_in_trend">
-<div class=trend__post1>
+<div class="trend-post" class="trend__image1">
   <div class="trandpost__content">
     <a href="#0" class="post__name">
             <h3 class="trend__name">сейчас в тренде: сад на подоконнике</h3>
@@ -58,7 +104,7 @@
           </ul>
     </div>
 	</div>
-  <div class=trend__post2>
+  <div class="trend-post" class="trend__image2">
   <div class="trandpost__content">
     <a href="#0" class="post__name">
             <h3 class="trend__name">сыры на красивых картинках из интернета: как они выглядят</h3>
@@ -68,7 +114,7 @@
     </ul>  
     </div>
 	</div>
-  <div class=trend__post3>
+  <div class="trend-post" class="trend__image3">
   <div class="trandpost__content">
     <a href="#0" class="post__name">
             <h3 class="trend__name">собираемся в первый поход в горы</h3>
@@ -79,7 +125,7 @@
           </ul>
     </div>
 	</div>
-  <div class=trend__post4>
+  <div class="trend-post" class="trend__image4">
   <div class="trandpost__content">
     <a href="#0" class="post__name">
             <h3 class="trend__name">сейчас в тренде: сколько витамина с в лимонах</h3>
@@ -91,6 +137,7 @@
     </div>
 	</div>
   </div>
+</div>
 </div>
 
 <!-- MAIN /!-->
@@ -313,7 +360,7 @@
 
 <!-- SHOP /!-->
 
-<div>
+<div class="shop__block">
 	<h3 class="section__tittle">наши изделия</h3>
 	<div class="products">
 		<div class="products__content">
@@ -322,8 +369,10 @@
 			<h3 class="post__name">подушки на диван</h3>
 			<p>Набор из двух подушек с модными принтами. Видео о создании <a href="#0" class="shop__link">здесь</a>.</p>
 			 <div class="price__and__button">
-			<p class="old__price">1000₽</p>
-			<p class="price">800₽</p>
+			 	<div>
+			       <p class="old__price">1000₽</p>
+			       <p class="price">800₽</p>
+		        </div>
           <button class="botton__shop" type="button">в магазин</button>
              </div>
           </div>
@@ -333,18 +382,26 @@
 			<div class="name__and__decription">
 			<h3 class="post__name">кукла "зайчик"</h3>
 			<p>Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="#0" class="shop__link">весенняя серия постов</a> в блоге и насколько подкастов.</p>
+			<div class="price__and__button">
+			<div>
 			<p class="price">3500₽</p>
+		</div>
           <button class="botton__shop" type="button">в магазин</button>
+      </div>
           </div>
 		</div>
 		<div class="products__content">
 			<img src="file:///Users/victoriawolf/Desktop/diploma.html/images/shop-item-desk3.jpg" class="product__image">
 			<div class="name__and__decription">
 			<h3 class="post__name">шестиугольная рамка</h3>
-			<p>Необычная рамка для украшения дома из видео <a href="#0" class="shop__link">"Как сделать рамку из подручных средств з 30 минут"</a>.</p>
-			<p class="old__price">500₽</p>
-			<p class="price">400₽</p>
+			<p>Необычная рамка для украшения дома из видео <a href="#0" class="shop__link">"Как сделать рамку из подручных средств за 30 минут"</a>.</p>
+			<div class="price__and__button">
+			<div>
+			  <p class="old__price">500₽</p>
+			  <p class="price">400₽</p>
+		    </div>
           <button class="botton__shop" type="button">в магазин</button>
+      </div>
           </div>
 		</div>
 	</div>
@@ -377,5 +434,6 @@
     </div>
   </div>
 </footer>
+
 	</body>
 	</html>

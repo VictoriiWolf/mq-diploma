@@ -32,9 +32,7 @@ a {
 
 /* ======================== HEADER */
 
-@media (min-width: 1201px) {
 .header {
-  background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/images/banner-bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -54,67 +52,19 @@ a {
   opacity: 0.5;
 }
 
-.header-wrapper {
-  width: 100%;
-  margin: auto;
-  position: relative;
-  z-index: 1;
-}
+/* ======================= NOW IN TREND */
 
-.menu__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 30px;
-}
-
-.logo {
-  width: 180px;
-  margin-left: 130px;
-}
-
-.header__navigation {
-  display: flex;
-}
-
-.menu__item {
-  margin-left: 35px;
-}
-
-.a_menu__item {
-  text-decoration: none;
-  color: #fff;
-  font-size: 13px;
-  text-transform: uppercase;
-}
-
-.a_menu__item:hover {
-  text-decoration: underline;
-}
-
-.header__title {
-  font-size: 45px;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  line-height: 1.6;
-  margin: auto;
-  max-width: 800px;
-  padding: 120px 0;
-  margin-right: 0 auto;
-  margin-top: 0 auto;
-}
-
-/* ======================== NOW IN TREND */
+  .trend__block {
+  margin-top: 65px;
+  }
 
   .section__tittle {
    text-transform: uppercase;
    margin: 0 auto;
    text-align: center;
    position: relative;
-   margin-top: 65px;;
   }
+
   .section__tittle:after {
     content: "";
     position: relative;
@@ -128,121 +78,17 @@ a {
     margin-left: auto;
 }
 
-  .now_in_trend {
-    display: flex;
-    width: 100%;
-}
-
-  .trend__post1 {
-    display: flex;
-    padding: 30px;
-    width: 25%;
-    margin: 1px;
-    height: 200px;
-    position: relative;
-    background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/images/trend1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.trend__post1:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-.trend__post2 {
-    display: flex;
-    padding: 30px;
-    width: 25%;
-    margin: 1px;
-    height: 200px;
-    position: relative;
-    background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/images/trend2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.trend__post2:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-.trend__post3 {
-    display: flex;
-    padding: 30px;
-    width: 25%;
-    margin: 1px;
-    height: 200px;
-    position: relative;
-    background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/images/trend3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.trend__post3:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-.trend__post4 {
-    display: flex;
-    padding: 30px;
-    width: 25%;
-    margin: 1px;
-    height: 200px;
-    position: relative;
-    background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/images/trend4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.trend__post4:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
-  z-index: 1;
-}
-
 .trandpost__content {
+  width: 80%;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
   z-index: 2;
   justify-content: right;
   align-items: flex-start;
-  border: 1px solid #b59f5b;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  outline: 1px solid #b59f5b;
+  outline-offset: 10px;
+  position: relative;
 }
 
 .tags__list {
@@ -272,6 +118,7 @@ a {
     text-decoration: underline;
   }
 
+
 /* ======================== MAIN */
 
 .main__and__sidebar {
@@ -283,19 +130,6 @@ a {
 
   .main {
   margin-top: 65px;
-}
-
-.main__wrapper {
-  min-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
- 
-  display: flex;
-  justify-content: space-between;
-}
-
-.main__content {
-  width: 65%;
 }
 
 .tags__list {
@@ -343,17 +177,67 @@ a {
   font-weight: bold;
 }
 
-.article {
-  display: flex;
-  align-items: flex-start;
-}
+/* ======================= SHOP*/
 
-.article:not(:first-child) {
+.shop__block {
   margin-top: 60px;
 }
 
-.article__picture {
-  margin-right: 30px;
+.product__image {
+  margin: 0 auto;
+}
+
+.name__and__decription {
+  border: 2px solid #b59f5b;
+  padding: 30px 20px 20px 20px;
+  margin-top: -30px;
+
+}
+
+.shop__link {
+  color: #b59f5b;
+}
+
+.shop__link:hover {
+  text-decoration: underline;
+}
+
+.old__price {
+  text-decoration: line-through;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.price__and__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botton__shop {
+  float: right;
+  width: 150px;
+  height: 50px;
+  border: 0px solid #b59f5b;
+  outline: none;
+  background: #b59f5b;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.botton__shop:hover {
+  background-color: black;
 }
 
 /* ======================= ASIDE */
@@ -361,6 +245,7 @@ a {
 .sidebar {
   width: 270px;
   margin-top: -20px;
+  margin-left: 10px;
 }
 
 .sidebar__header {
@@ -448,7 +333,7 @@ a {
   width: 50px;
   height: 50px;
   border: none;
-  background-image: url('file:///Users/victoriawolf/Desktop/diploma.html/svg/search.svg');
+  background-image: url('../svg/search.svg');
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center center;
@@ -585,80 +470,16 @@ placeholder {
   background-color: #ededed;
 }
 
-/* ======================= SHOP*/
-
-.products {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 60px;
-}
-
-.products__content {
-  display: flex;
-  flex-wrap: wrap;
-  width: 30%;
-}
-
-.product__image {
-  margin: 0 auto;
-}
-
-.name__and__decription {
-  border: 2px solid #b59f5b;
-  padding: 30px 20px 20px 20px;
-  margin-top: -30px;
-
-}
-
-.shop__link {
-  color: #b59f5b;
-}
-
-.shop__link:hover {
-  text-decoration: underline;
-}
-
-.old__price {
-  text-decoration: line-through;
-  font-size: 13px;
-  font-weight: 700;
-  font-style: bold;
-}
-
-.price {
-  font-size: 20px;
-  font-weight: 700;
-  font-style: bold;
-}
-
-.botton__shop {
-  float: right;
-  width: 150px;
-  height: 50px;
-  border: 0px solid #b59f5b;
-  outline: none;
-  background: #b59f5b;
-  cursor: pointer;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.botton__shop:hover {
-  background-color: black;
-}
-
 /* ===================== FOOTER */
+
 .footer {
   margin: 0 auto; 
-  width: 93%;
+  width: 100%;
 }
 
 .footer__wrapper {
   margin: auto;
-  padding: 0 15px;
+  padding: 0 4%;
 }
 
 .footer__address {
@@ -686,15 +507,15 @@ placeholder {
 }
 
 .social__icon__dribbble {
-  background-image: url(file:///Users/victoriawolf/Desktop/diploma.html/svg/001-dribbble.svg);
+  background-image: url(../svg/001-dribbble.svg);
 }
 
 .social__icon__pinterest {
-  background-image: url(file:///Users/victoriawolf/Desktop/diploma.html/svg/001-pinterest.svg);
+  background-image: url(../svg/001-pinterest.svg);
 }
 
 .social__icon__tumblr {
-  background-image: url(file:///Users/victoriawolf/Desktop/diploma.html/svg/003-tumblr.svg);
+  background-image: url(../svg/003-tumblr.svg);
 }
 
 .visually-hidden {
@@ -718,12 +539,224 @@ placeholder {
   color: #999999;
   font-weight: 700;
 }
+
+
+  /* ======================== MEDIA >1201PX */
+
+
+@media (min-width: 1201px) {
+
+  /* ======================== HEADER */
+
+.header {
+  background-image: url('../images/banner-bg.jpg');
+}
+
+.header-wrapper {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.logo {
+  width: 180px;
+  margin-left: 130px;
+}
+
+.burger__menu {
+  display: none;
+}
+
+.header__navigation {
+  display: flex;
+}
+
+.menu__item {
+  margin-left: 35px;
+}
+
+.a_menu__item {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.a_menu__item:hover {
+  text-decoration: underline;
+}
+
+.header__title {
+  font-size: 45px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: auto;
+  max-width: 800px;
+  padding: 120px 0;
+  margin-right: 0 auto;
+  margin-top: 0 auto;
+}
+
+/* ======================== NOW IN TREND */
+
+  .now_in_trend {
+    display: flex;
+    width: 100%;
+}
+
+  .trend-post {
+    display: flex;
+    padding: 30px;
+    width: 25%;
+    margin: 1px;
+    height: 200px;
+}
+
+  .trend__image1 {
+    position: relative;
+    background-image: url('../images/trend1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .trend__image1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+  .trend__image2 {
+    position: relative;
+    background-image: url('../images/trend2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
+}
+
+.trend__image2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.trend__image3 {
+    position: relative;
+    background-image: url('../images/trend3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
+}
+
+.trend__image3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.trend__image4 {
+  position: relative;
+  background-image: url('../images/trend4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+}
+
+.trend__image4:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 
-@media (min-width: 768px and max-width: 1200px) {
+/* ======================== MAIN */
+
+.main__wrapper {
+  min-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+ 
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__content {
+  width: 65%;
+}
+
+.article {
+  display: flex;
+  align-items: flex-start;
+}
+
+.article:not(:first-child) {
+  margin-top: 60px;
+}
+
+.article__picture {
+  margin-right: 30px;
+}
+
+   /* ======================== SHOP */
+
+.products {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+.products__content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+}
+
+
+  /* ======================== MEDIA 641-1200PX */
+
+
+@media (orientation: portrait), (min-width: 641px) and (max-width: 1200px) {
+
+   /* ======================== HEADER */
+
   .header {
-  background-image: url('images/banner-tablet.jpg');
+  background-image: url('../images/banner-bg-tablet.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -731,4 +764,319 @@ placeholder {
   padding: 30px 0;
   width: 100%;
 }
+
+  .header:after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+  .header-wrapper {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+  .menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
+  .logo {
+  width: 180px;
+  margin-left: 50px;
+}
+
+.burger__menu {
+  fill:  #fff;
+  width: 50px;
+}
+
+  .header__navigation {
+  display: none;
+}
+
+  .header__title {
+  font-size: 45px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: auto;
+  max-width: 800px;
+  padding: 120px 0;
+  margin-right: 0 auto;
+  margin-top: 0 auto;
+}
+
+/* ======================== NOW IN TREND */
+
+.now_in_trend {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trend-post {
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+    width: calc(50% - 2px);
+    margin: 1px;
+    height: 200px;
+}
+
+  .trend__image1 {
+    position: relative;
+    background-image: url('../images/trend1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .trend__image1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.trend__image2 {
+    position: relative;
+    background-image: url('../images/trend2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trend__image2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.trend__image3 {
+    position: relative;
+    background-image: url('../images/trend3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trend__image3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.trend__image4 {
+  position: relative;
+  background-image: url('../images/trend4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.trend__image4:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+
+/* ======================== MAIN */
+
+.main__and__sidebar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main {
+  margin-top: 65px;
+}
+
+.main__wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+ 
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__content {
+  width: 65%;
+}
+
+.article__picture {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tags__list {
+  display: flex;
+}
+
+.tag {
+  color: #b59f5b;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.tag:hover {
+  text-decoration: underline;
+}
+
+.post__name {
+  color: black;
+  text-transform: uppercase;
+}
+
+.post__name:hover {
+  color: #b59f5b;
+}
+
+.time__and__autor {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-top: -10px;
+}
+
+.time {
+  font-size: 12px;
+  color: #888888;
+  padding-top: 0;
+  margin-right: 10px;
+}
+
+.unknown__autor {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.article {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.article:after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #f3f7f5;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+   /* ======================== SHOP */
+
+.products {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+
+}
+
+.products__content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  margin: 0px 10px 10px 10px;
+}
+}
+
+@media (orientation: landscape), (min-width: 641px) and (max-width: 1200px) {
+  
+    /* ======================== NOW IN TREND */
+
+  .trend-post {
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+    width: calc(25% - 2px);
+    margin: 1px;
+    height: 200px;
+}
+}
+
+
+  /* ======================== MEDIA <640PX */
+
+
+@media (mix-width: 640px) {
+
+    .header {
+  background-image: url('../images/banner-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding: 30px 0;
+  width: 100%;
+}
+
+  .header:after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+ .header-wrapper {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 180px;
+  margin: 0 auto;
+}
+
+
 }
