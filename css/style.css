@@ -625,7 +625,7 @@ placeholder {
 
   .trend__image1 {
     position: relative;
-    background-image: url('../images/trend1.jpg');
+    background-image: url(../images/trend1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -644,7 +644,7 @@ placeholder {
 
   .trend__image2 {
     position: relative;
-    background-image: url('../images/trend2.jpg');
+    background-image: url(../images/trend2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25%;
@@ -664,7 +664,7 @@ placeholder {
 
 .trend__image3 {
     position: relative;
-    background-image: url('../images/trend3.jpg');
+    background-image: url(../images/trend3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25%;
@@ -684,7 +684,7 @@ placeholder {
 
 .trend__image4 {
   position: relative;
-  background-image: url('../images/trend4.jpg');
+  background-image: url(../images/trend4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 25%;
@@ -756,7 +756,7 @@ placeholder {
    /* ======================== HEADER */
 
   .header {
-  background-image: url('../images/banner-bg-tablet.jpg');
+  background-image: url(../images/banner-bg-tablet.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -837,7 +837,7 @@ placeholder {
 
   .trend__image1 {
     position: relative;
-    background-image: url('../images/trend1.jpg');
+    background-image: url(../images/trend1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -856,7 +856,7 @@ placeholder {
 
 .trend__image2 {
     position: relative;
-    background-image: url('../images/trend2.jpg');
+    background-image: url(../images/trend2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -875,7 +875,7 @@ placeholder {
 
 .trend__image3 {
     position: relative;
-    background-image: url('../images/trend3.jpg');
+    background-image: url(../images/trend3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -894,7 +894,7 @@ placeholder {
 
 .trend__image4 {
   position: relative;
-  background-image: url('../images/trend4.jpg');
+  background-image: url(../images/trend4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1047,7 +1047,7 @@ placeholder {
 @media (mix-width: 640px) {
 
     .header {
-  background-image: url('../images/banner-mobile.jpg');
+  background-image: url(../images/banner-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
