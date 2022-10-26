@@ -549,7 +549,7 @@ placeholder {
   /* ======================== HEADER */
 
 .header {
-  background-image: url('../images/banner-bg.jpg');
+  background-image: url(../images/banner-bg.jpg);
 }
 
 .header-wrapper {
@@ -832,6 +832,7 @@ placeholder {
     width: calc(50% - 2px);
     margin: 1px;
     height: 200px;
+    align-items: end;
 }
 
   .trend__image1 {
