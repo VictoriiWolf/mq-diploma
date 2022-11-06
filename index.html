@@ -9,10 +9,12 @@
 	<body>
 
 
-<!-- POP UP
+<!-- POP UP 
 
 <div class="popup__container">
  <div class="popup">
+ 	<a href="0#">
+ 	<img src="svg/form-x.svg" class="popup__close"></a>
 	<h3 class="section__tittle">ваш фидбек</h3>
 
   <div class="popup__content">
@@ -29,12 +31,16 @@
 
    <div class="popup__content">
   <p>Вы подписаны на e-mail рассылку?</p>
-     <input type="radio" class="radio__button">
+     <input type="radio" class="radio__botton">
      <label>
+     	<a href="#0">
+     		<img src="svg/form-circle.svg" class="radio__yes"></a>
      Да
     </label>
-     <input type="radio" class="radio__button" class="no">
+     <input type="radio" class="radio__botton">
      <label>
+       <a href="#0">
+     		<img src="svg/form-empty-circle.svg" class="radio__no"></a>	
      Нет
     </label>
 </div>
@@ -49,19 +55,23 @@
      </div>
      </div>
  </div>
-</div> /!-->
+</div> 
+
+</body>
+	</html> /!-->
 	
 <!-- HEADER /!-->
 
 <header class="header">
   <div class="header-wrapper">
-    <nav class="menu__top">
-      <a href="#0" class="logo__link">
+  	<a href="#0" class="logo__link">
         <img src="svg/noemi-logo.svg" alt="Логотип" class="logo">
      </a> 
-        <a href="#0">
+     <a href="#0">
         <img src="svg/burger-menu.svg" alt="бургерное меню" class="burger__menu">
         </a>
+    <nav class="menu__top">
+ 
       <ul class="header__navigation">
         <li class="menu__item">
           <a href="#0" class="a_menu__item">Главная</a>
@@ -83,7 +93,7 @@
         </li>
       </ul>
     </nav>
-    <h1 class="header__title">блог о творчестве, спорте<br> и образе жизни</h1>
+    <h1 class="header__title">блог о творчестве, спорте и образе жизни</h1>
   </div>
 </header>
 
@@ -93,7 +103,7 @@
 	<h3 class="section__tittle">сейчас в тренде</h3>
 <div class="now_in_trend">
 	<div class="now_in_trend">
-<div class="trend-post" class="trend__image1">
+<div class="trend-post trend__image-garden">
   <div class="trandpost__content">
     <a href="#0" class="post__name">
             <h3 class="trend__name">сейчас в тренде: сад на подоконнике</h3>
@@ -104,7 +114,7 @@
           </ul>
     </div>
 	</div>
-  <div class="trend-post" class="trend__image2">
+  <div class="trend-post trend__image-cheese">
   <div class="trandpost__content">
     <a href="#0" class="post__name">
             <h3 class="trend__name">сыры на красивых картинках из интернета: как они выглядят</h3>
@@ -114,7 +124,7 @@
     </ul>  
     </div>
 	</div>
-  <div class="trend-post" class="trend__image3">
+  <div class="trend-post trend__image-camp">
   <div class="trandpost__content">
     <a href="#0" class="post__name">
             <h3 class="trend__name">собираемся в первый поход в горы</h3>
@@ -125,7 +135,7 @@
           </ul>
     </div>
 	</div>
-  <div class="trend-post" class="trend__image4">
+  <div class="trend-post trend__image-lemon">
   <div class="trandpost__content">
     <a href="#0" class="post__name">
             <h3 class="trend__name">сейчас в тренде: сколько витамина с в лимонах</h3>
@@ -364,7 +374,11 @@
 	<h3 class="section__tittle">наши изделия</h3>
 	<div class="products">
 		<div class="products__content">
-			<img src="images/shop-item-desk1.jpg" class="product__image">
+			<picture class="product__image">
+				<source srcset="images/shop-item-desk1.jpg" media="(min-width: 1201px)">
+				<source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+				<source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+			</picture>
 			<div class="name__and__decription">
 			<h3 class="post__name">подушки на диван</h3>
 			<p>Набор из двух подушек с модными принтами. Видео о создании <a href="#0" class="shop__link">здесь</a>.</p>
@@ -378,7 +392,11 @@
           </div>
 		</div>
 		<div class="products__content">
-			<img src="images/shop-item-desk2.jpg" class="product__image">
+			<picture class="product__image">
+				<source srcset="images/shop-item-desk2.jpg" media="(min-width: 1201px)">
+				<source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+				<source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+			</picture>
 			<div class="name__and__decription">
 			<h3 class="post__name">кукла "зайчик"</h3>
 			<p>Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="#0" class="shop__link">весенняя серия постов</a> в блоге и насколько подкастов.</p>
@@ -391,7 +409,11 @@
           </div>
 		</div>
 		<div class="products__content">
-			<img src="images/shop-item-desk3.jpg" class="product__image">
+			<picture class="product__image">
+				<source srcset="images/shop-item-desk3.jpg" media="(min-width: 1201px)">
+				<source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+				<source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+			</picture>
 			<div class="name__and__decription">
 			<h3 class="post__name">шестиугольная рамка</h3>
 			<p>Необычная рамка для украшения дома из видео <a href="#0" class="shop__link">"Как сделать рамку из подручных средств за 30 минут"</a>.</p>
@@ -436,4 +458,4 @@
 </footer>
 
 	</body>
-	</html>
+	</html>  
