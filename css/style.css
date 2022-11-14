@@ -31,6 +31,116 @@ a {
   text-decoration: none;
 }
 
+  /* ======================== POPUP */
+
+  .popup-view {
+   z-index: 10;
+   position: absolute;
+   visibility: hidden;
+ }
+
+  .popup__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow: hidden;
+  position: fixed;
+  left: 0; 
+  right: 0; 
+  top: 0; 
+  bottom: 0;
+  order: 1;
+}
+
+.popup {
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: black;
+  padding: 30px;
+  left: 50%;
+  top: 50%;
+}
+
+.popup__options {
+  width: 100%;
+  height: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-image: url(../svg/form-arrows.svg);
+  background-repeat: no-repeat;
+  background-color: #f3f7f5;
+  border: 0px solid #f3f7f5;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popup__content {
+  margin-bottom: 30px;
+}
+
+.popup__options {
+background-size: auto 20px;
+background-position: bottom 13px right 20px;
+}
+
+.radio__botton {
+  margin-right: 20px;
+  display: none;
+}
+
+.radio__yes {
+  width: 15px;
+}
+
+.radio__no {
+  width: 15px;
+  margin-left: 15px;
+}
+
+.popup__text {
+  box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+  background-color: #f3f7f5;
+  border: 0px solid #f3f7f5;
+  padding: 15px;
+  resize: none;
+  font-family: Open Sans, sans-serif;
+}
+
+.botton__send {
+  width: 100%;
+  height: 50px;
+  border: 0px solid #b59f5b;
+  outline: none;
+  background: #b59f5b;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.botton__send:hover {
+  background-color: black;
+}
+
+.popup__close {
+  position: relative;
+  float: right;  
+  width: 20px;
+  margin-top: -55px;
+  margin-right: -30px;
+}
+
 /* ======================== HEADER */
 
 .header {
@@ -97,7 +207,6 @@ a {
 .tags__list {
   display: flex;
   margin-bottom: -15px;
-  z-index: 2;
 }
 
 .tag {
@@ -197,7 +306,6 @@ a {
 .name__and__decription {
   border: 2px solid #b59f5b;
   padding: 30px 20px 20px 20px;
-  margin-top: -30px;
   box-sizing: border-box;
   height: 250px;
 }
@@ -556,99 +664,14 @@ a {
 
   /* ======================== POPUP */
 
-  .popup__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  overflow: hidden;
-  position: fixed;
-  left: 0; 
-  right: 0; 
-  top: 0; 
-  bottom: 0;
-}
-
 .popup {
-  width: 25%;
-  background-color: white;
-  margin: 0px auto;
-  padding: 10px;
-  color: black;
-  padding: 30px;
-}
-
-.popup__content {
-  margin-bottom: 30px;
-}
-
-.popup__options {
-  width: 100%;
-  height: 50px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-image: url(../svg/form-arrows.svg);
-  background-repeat: no-repeat;
-  background-size: auto 20px;
-  background-position: bottom 13px right 20px;
-  background-color: #f3f7f5;
-  border: 0px solid #f3f7f5;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.radio__botton {
-  margin-right: 20px;
-  display: none;
-}
-
-.radio__yes {
-  width: 15px;
-}
-
-.radio__no {
-  width: 15px;
-  margin-left: 15px;
-}
-
-.popup__text {
-  box-sizing: border-box;
-  width: 100%;
-  height: 120px;
-  background-color: #f3f7f5;
-  border: 0px solid #f3f7f5;
-  padding: 15px;
-  resize: none;
-}
-
-.botton__send {
-  width: 100%;
-  height: 50px;
-  border: 0px solid #b59f5b;
-  outline: none;
-  background: #b59f5b;
-  cursor: pointer;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.botton__send:hover {
-  background-color: black;
+width: 25%;
 }
 
 .popup__close {
-  position: relative;
-  width: 20px;
-  float: right;
-  margin-top: -55px;
-  margin-right: -30px;
+width: 20px;
+margin-top: -55px;
+margin-right: -30px;
 }
 
   /* ======================== HEADER */
@@ -817,6 +840,10 @@ a {
   width: 30%;
 }
 
+.name__and__decription {
+  margin-top: -30px;
+}
+
 /* ======================= ASIDE */
 
 .sidebar {
@@ -829,6 +856,12 @@ a {
   /* ======================== MEDIA 641-1200PX */
 
   @media (min-width: 641px) and (max-width: 1200px) {
+
+    /* ======================== POPUP */
+
+.popup {
+  width: 40%;
+}
 
      /* ======================== HEADER */
 
@@ -1100,8 +1133,15 @@ a {
 
   /* ======================== MEDIA <640PX */
 
-
 @media (max-width: 640px) {
+
+    /* ======================== POPUP */
+
+    .popup {
+  width: 70%;
+}
+
+  /* ======================== HEADER */
 
     .header {
   background-image: url(../images/banner-mobile.jpg);
@@ -1112,6 +1152,7 @@ a {
   width: 100%;
   height: 100vh;
   padding: 30px;
+  box-sizing: border-box;
 }
 
   .header:after {
@@ -1233,7 +1274,7 @@ a {
 }
 
 .main__content {
-  width: 90%;
+  width: 95%;
   justify-content: center;
 }
 
@@ -1259,6 +1300,7 @@ a {
 
 .article__picture {
   margin-bottom: 10px;
+  width: 100%;
 }
 
 /* ======================= ASIDE */
@@ -1288,6 +1330,10 @@ a {
   margin: 0px 10px 10px 10px;
 }
 
+.name__and__decription {
+  margin-top: 50px;
+}
+
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -1310,6 +1356,12 @@ a {
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
+
+   /* ======================== POPUP   */
+
+       .popup {
+  height: 80%;
+}
 
 /* ======================== NOW IN TREND */
 
