@@ -40,7 +40,7 @@ h4 {
   .popup-view {
    z-index: 10;
    position: absolute;
-   visibility: hidden;
+   visibility: ;
  }
 
   .popup__container {
@@ -127,7 +127,6 @@ background-position: bottom 13px right 20px;
   background: #b59f5b;
   cursor: pointer;
   font-weight: 700;
-  font-style: bold;
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
@@ -202,7 +201,6 @@ background-position: bottom 13px right 20px;
 
 .trandpost__content {
   padding: 5%;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -325,7 +323,8 @@ background-position: bottom 13px right 20px;
 .name__and__decription {
   border: 2px solid #b59f5b;
   padding: 30px 20px 20px 20px;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  height: 12em;
 }
 
 .shop__link {
@@ -419,7 +418,6 @@ background-position: bottom 13px right 20px;
 }
 
 .time_and_post {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -600,7 +598,7 @@ background-position: bottom 13px right 20px;
   margin-bottom: 10px;
   width: 100%;
   height: 1px;
-  background-color: #ededed;
+  background-color: #efefee;
 }
 
 /* ===================== FOOTER */
@@ -773,6 +771,10 @@ margin-right: -30px;
     width: calc(25% - 1px);
     margin: 1px;
     height: 200px;
+}
+
+.trandpost__content {
+  box-sizing: border-box;
 }
 
   .trend__image-garden {
@@ -1122,13 +1124,18 @@ margin-right: -30px;
   margin: 0px 10px 10px 10px;
 }
 
+.name__and__decription {
+margin-top: -30px;
+}
+
 /* ======================= ASIDE */
 
 .sidebar {
   width: 270px;
+  margin-left: 20px;
   }
 
-  }
+}
 
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
@@ -1343,8 +1350,10 @@ margin-right: -30px;
 /* ======================= ASIDE */
 
 .sidebar {
-  width: 100%;
+  width: 95%;
 }
+
+
 
 /* ======================= SHOP */
 
@@ -1368,7 +1377,7 @@ margin-right: -30px;
 }
 
 .name__and__decription {
-  margin-top: 50px;
+  margin-top: -30px;
 }
 
 }
