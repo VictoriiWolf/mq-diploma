@@ -102,10 +102,13 @@ background-position: bottom 13px right 20px;
 .botton_radio {
   display: inline-block;
   width: 15px;
+  height: 15px;
   cursor: pointer;
   background-image: url(../svg/form-empty-circle.svg);
   background-repeat: no-repeat;
   position: relative;
+  background-position: center;
+  background-size: contain;
 }
 
 .botton_radio::before {
@@ -120,6 +123,10 @@ background-position: bottom 13px right 20px;
 
 .botton_radio:checked + .botton_radio::after {
   opacity: 1;
+}
+
+.radio__botton:checked ~ .botton_radio {
+  background-image: url(../svg/form-circle.svg);
 }
 
 .popup__text {
